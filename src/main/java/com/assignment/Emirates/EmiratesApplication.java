@@ -33,7 +33,7 @@ public class EmiratesApplication {
 		return executor;
 	}
 
-	@Scheduled(fixedRate = 86400) // cache will be evicted after 24 hours
+	@Scheduled(fixedRate = 86400) // cache will be evicted after 24 hours.
 	public void evictAllcachesAtIntervals() {
 		evictAllCaches();
 	}
